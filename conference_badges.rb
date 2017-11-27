@@ -8,5 +8,5 @@ def batch_badge_creator (names)
 end
 
 def assign_rooms (names)
-  names.enum_with_index.map { |e, i| "Hello, #{e}! You'll be assigned to room #{i+1}!" }
+  names.map.with_index { |e, i| "Hello, #{e}! You'll be assigned to room #{i+1}!" }
 end
